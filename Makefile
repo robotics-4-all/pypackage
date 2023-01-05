@@ -72,7 +72,7 @@ cov_html: test
 
 diff: ## Calculate diff
 	coverage xml
-	diff-cover --compare-branch=origin/devel coverage.xml
+	diff-cover --compare-branch=origin/main coverage.xml
 
 docs: ## generate Sphinx HTML documentation, including API docs
 	rm -f docs/pypackage.rst
