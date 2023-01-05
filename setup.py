@@ -20,7 +20,7 @@ if sys.argv[-1].startswith('publish'):
     else:
         os.system("twine upload dist/*")
         print("You probably want to also tag the version now:")
-        print("  git tag -a {0} -m 'version {0}'".format(importlib.metadata.version('mypackage')))
+        print("  git tag -a {0} -m 'version {0}'".format(importlib.metadata.version('pypackage')))
         print("  git push --tags")
     sys.exit()
 

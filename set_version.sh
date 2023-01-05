@@ -7,4 +7,4 @@ if [[ -z $VERSION ]]; then
     exit 1
 fi
 
-sed -i "s/__version__ = .*/__version__ = \"${VERSION}\"/g" ./mypackage/__init__.py
+sed -i "s/__version__ = .*/__version__ = \"${VERSION}\"/g" ./pypackage/__init__.py

@@ -58,7 +58,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 mypackage tests
+	flake8 pypackage tests
 
 test: ## run tests quickly with the default Python
 	coverage run -m unittest discover
@@ -75,9 +75,9 @@ diff: ## Calculate diff
 	diff-cover --compare-branch=origin/devel coverage.xml
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/mypackage.rst
+	rm -f docs/pypackage.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ mypackage
+	sphinx-apidoc -o docs/ pypackage
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

@@ -1,1 +1,1 @@
-"""Unit tests for mypackage."""
+"""Unit tests for pypackage."""
